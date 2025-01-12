@@ -30,7 +30,7 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-primary text-xl">BookApp</a>
+        <router-link to="/" class="btn btn-primary text-xl">BookApp</router-link>
       </div>
       <nav class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">

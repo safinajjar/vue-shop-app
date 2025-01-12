@@ -8,10 +8,11 @@ defineProps<{
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div
+    <routerLink
       v-for="product in products"
       :key="product.id"
       class="card card-compact card-bordered bg-base-100 shadow-md"
+      :to="{ name: 'product', params: { id: product.id } }"
     >
       <figure>
         <img :src="product.image" :alt="product.name" />
@@ -24,6 +25,6 @@ defineProps<{
           <button class="btn btn-primary">Add to Cart</button>
         </div>
       </div>
-    </div>
+    </routerLink>
   </div>
 </template>
