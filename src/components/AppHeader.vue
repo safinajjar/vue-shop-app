@@ -2,7 +2,7 @@
 
 <template>
   <header class="navbar bg-base-100">
-    <div class="container mx-auto">
+    <div class="container">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

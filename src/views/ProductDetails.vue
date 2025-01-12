@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container mx-auto mt-24">
+  <div class="container mt-24">
     <!-- Main Product Section -->
     <div v-if="product" class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Product Image -->
