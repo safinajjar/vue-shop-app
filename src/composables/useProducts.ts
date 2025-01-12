@@ -19,8 +19,19 @@ export const useProducts = () => {
     return productsData
   }
 
+  const fetchProductById = (id: string): Product => {
+    const product = productsData.find((product) => product.id === id)
+
+    if (!product) {
+      throw new Error(`Product with id ${id} not found`)
+    }
+
+    return product
+  }
+
   return {
     generateProducts,
     getSavedProducts,
+    fetchProductById,
   }
 }
